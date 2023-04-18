@@ -5,5 +5,5 @@ import * as Module from './module.js'
 console.log('hello, world')
 console.log(Module)
 
-import * as MJS from './mjs.mjs' // using import and export in mjs file is also ok if your package.json "type": "module"
-console.log(MJS)
+import cjs from './cjs.cjs'
+console.log(cjs)
