@@ -1,1 +1,3 @@
-export const mjs = 'mjs';
+export default {
+  kd: 'kd'
+}
