@@ -7,3 +7,7 @@ console.log(Module)
 
 import cjs from './cjs.cjs'
 console.log(cjs)
+
+import X from 'colors' // commonjs modules of node_modules do not need cjs
+
+console.log(X)
