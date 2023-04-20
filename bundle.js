@@ -7,11 +7,11 @@ import('./mjs.mjs').then(res => {
 // console.log(A)
 
 // Error [ERR_REQUIRE_ESM]: require() of ES Module C:xxx\module-test\mjs.mjs not supported.
-const A = require('./cjs.cjs') 
-console.log('A:', A)
-A.cjs = 'A cjs'; // commonjs is not readonly
+const A = require('./cjs.cjs'); 
+console.log('A:', A);
+A.cjs = 'A cjs';
 
-const B = require('./cjs.cjs') 
-console.log('B:', B)
+const B = require('./cjs.cjs'); 
+console.log('B:', B);
 
-// Conclusion, you can use UMD syntax to import a commonjs module which declared cjs file, but you can't use commonjs require UMD module directly, even a mjs file, 
+// Conclusion, you can use UMD syntax to import a commonjs module which declared cjs file, but you can't use commonjs require UMD module directly, even a mjs file,
